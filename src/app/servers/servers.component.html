@@ -1,10 +1,18 @@
 <div class="container">
 
+  <!-- <label for="serverName">Server Name</label> -->
+  <!-- event binding in input tag  -->
+  <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+  <p>{{ serverName }}</p> -->
+
+
   <label for="serverName">Server Name</label>
-  <input type="text" class="form-control" (input)="onUpdateServerName($event)">
-  <br>
+  <!-- two way binding in input tag  -->
+  <input type="text" class="form-control" >
   <p>{{ serverName }}</p>
-  <!-- //property binding  -->
+
+  <!-- //property binding disabled   -->
+  <!-- event binding onclick -->
 <button class="btn btn-primary" [disabled]="!allowedNewServer" (click)="onCreateServer()">Add Server</button>
 <br>
 <hr>
