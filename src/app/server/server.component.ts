@@ -11,13 +11,20 @@ export class ServerComponent{
   serverId:number=10;
   serverStatus:string;
 
+  // constructor for generare reandom status
   constructor()
   {
     this.serverStatus=Math.random()>0.5 ? 'online':'offline';
   }
 
+  // get server status
   getServerStatus()
   {
     return this.serverStatus;
+  }
+
+  // porperty binding
+  getColor(){
+      return this.serverStatus==='online' ? 'green':'red';
   }
 }
