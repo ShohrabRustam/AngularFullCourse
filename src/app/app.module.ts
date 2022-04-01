@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 
 // import servercompont in AppModule
 import { ServerComponent } from './server/server.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
