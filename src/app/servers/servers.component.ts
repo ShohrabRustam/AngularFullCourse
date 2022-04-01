@@ -15,10 +15,13 @@ export class ServersComponent implements OnInit {
         this.allowedNewServer=true;
     },5000);
 
-
   }
 
   ngOnInit(): void {
+  }
+
+  onCreateServer(){
+    this.serverCreationStatus="Server was created!!";
   }
 
 }
