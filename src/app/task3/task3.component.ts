@@ -14,4 +14,16 @@ export class Task3Component implements OnInit {
   ngOnInit(): void {
   }
 
+  onToggleDetails()
+  {
+    // if(this.showSecret==false){
+    //   this.showSecret=true;
+    // }
+    // else{
+    // this.showSecret=false;
+    // }
+
+    this.showSecret=!this.showSecret;
+  }
+
 }

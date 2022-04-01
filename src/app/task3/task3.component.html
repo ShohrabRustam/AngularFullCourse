@@ -10,7 +10,9 @@
       </li>
   </ol>
 
-  <button class="btn btn-primary" (click)="showSecret=!showSecret">Display Details</button>
+  <!-- <button class="btn btn-primary" (click)="showSecret=!showSecret">Display Details</button> -->
+  <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+
   <br>
   <br>
   <p *ngIf="showSecret">Secret-Password=tuna</p>
