@@ -16,4 +16,7 @@
   <br>
   <br>
   <p *ngIf="showSecret">Secret-Password=tuna</p>
+  <div *ngFor="let arrayItem of array" [ngStyle]="{backgroundColor:arrayItem>=5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text':arrayItem>=5  }">
+    {{ arrayItem }}</div>
 </div>

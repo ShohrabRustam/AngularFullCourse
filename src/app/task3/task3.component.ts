@@ -16,7 +16,7 @@ export class Task3Component implements OnInit {
 
   onToggleDetails() {
     this.showSecret = !this.showSecret;
-    this.array.push(this.array.length);
+    this.array.push(this.array.length+1);
 
   }
 
