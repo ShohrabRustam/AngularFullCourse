@@ -1,0 +1,13 @@
+<div class="container">
+  <ol>
+    <li>Add a Input field which update a property ('userName') via Two way Binding. </li>
+    <li>Output and username property via String Interpolation (in a paragraphp below input )</li>
+    <li>Add a button which may only be clicked if the username is not empty string </li>
+    <li>Upon clicking the button the username should be reset to an empty string </li>
+  </ol>
+</div>
+
+<label for="userName">userName</label>
+<input type="text" class="form-control" [(ngModel)]='userName'>
+
+<p>{{ userName }}</p>
