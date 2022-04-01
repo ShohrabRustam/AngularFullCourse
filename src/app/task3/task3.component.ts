@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Task3Component implements OnInit {
 
+  showSecret:boolean=false;
   constructor() { }
+
 
   ngOnInit(): void {
   }
