@@ -11,11 +11,13 @@ export class ServerComponent{
   serverId:number=10;
   serverStatus:string;
 
-  constructor(){
+  constructor()
+  {
     this.serverStatus=Math.random()>0.5 ? 'online':'offline';
   }
 
-  getServerStatus(){
+  getServerStatus()
+  {
     return this.serverStatus;
   }
 }
