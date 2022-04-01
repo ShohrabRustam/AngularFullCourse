@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 // import servercompont in AppModule
 import { ServerComponent } from './server/server.component';
 import { ServicesComponent } from './services/services.component';
+import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServicesComponent,
+    WarningAlertComponent
   ],
   imports: [
     BrowserModule,
