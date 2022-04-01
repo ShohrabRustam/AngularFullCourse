@@ -1,3 +1,8 @@
 p{
   margin: 10px;
+  padding: 10px;
+}
+
+.online{
+  color: white;
 }
