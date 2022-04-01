@@ -8,7 +8,7 @@
 
   <label for="serverName">Server Name</label>
   <!-- two way binding in input tag  -->
-  <input type="text" class="form-control" [(ngModel)]="serverName" >
+  <input type="text" class="form-control" [(ngModel)]="serverName">
 
   <!-- //property binding disabled   -->
   <!-- event binding onclick -->
@@ -17,12 +17,15 @@
   <br>
   <hr>
   <!-- <p>{{ serverName }}</p> -->
-<!-- string interpulation  -->
-<!-- <p [innerText]="allowedNewServer"></p> -->
-<!-- <p>{{ serverCreationStatus }}</p> -->
-<p *ngIf="serverCreated">Server was Created, server name is {{ serverName }}</p>
+  <!-- string interpulation  -->
+  <!-- <p [innerText]="allowedNewServer"></p> -->
+  <!-- <p>{{ serverCreationStatus }}</p> -->
 
-<app-server></app-server>
-<app-server></app-server>
+  <p *ngIf="serverCreated;  else noServer">Server was Created, server name is {{ serverName }}</p>
+  <ng-template #noServer>
+    <p> No Server was Created !!</p>
+  </ng-template>
+
+  <app-server></app-server>
+  <app-server></app-server>
 </div>
-
