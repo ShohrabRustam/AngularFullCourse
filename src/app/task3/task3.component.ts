@@ -7,23 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Task3Component implements OnInit {
 
-  showSecret:boolean=false;
+  showSecret: boolean = false;
+  array = [1];
   constructor() { }
-
 
   ngOnInit(): void {
   }
 
-  onToggleDetails()
-  {
-    // if(this.showSecret==false){
-    //   this.showSecret=true;
-    // }
-    // else{
-    // this.showSecret=false;
-    // }
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    this.array.push(this.array.length);
 
-    this.showSecret=!this.showSecret;
   }
 
 }
